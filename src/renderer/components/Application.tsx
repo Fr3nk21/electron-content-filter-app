@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '@styles/app.scss';
 import icons from '@components/icons';
+import Blocker from '@components/Blocker';
 
 const Application: React.FC = () => {
   const [counter, setCounter] = useState(0);
@@ -48,6 +49,7 @@ const Application: React.FC = () => {
 
   return (
     <div id='erwt'>
+      <Blocker />
       <div className='header'>
         <div className='main-heading'>
           <h1 className='themed'>ERWT - Electron Boilerplate</h1>
